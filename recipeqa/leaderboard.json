@@ -1,0 +1,150 @@
+{
+    "config": {
+        "allow_multiple_models": true,
+        "allow_orphans": true,
+        "count_failed_submissions": true,
+        "evaluate": {
+            "command": "python evaluate.py predictions.json data.json out.json",
+            "dependencies": [
+                {
+                    "child_path": "evaluate.py",
+                    "parent_path": "",
+                    "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
+                },
+                {
+                    "child_path": "data.json",
+                    "parent_path": "",
+                    "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
+                },
+                {
+                    "child_path": "predictions.json",
+                    "parent_path": "",
+                    "parent_uuid": "{predict}"
+                }
+            ],
+            "metadata": {
+                "request_docker_image": "codalab/ubuntu:1.9"
+            },
+            "tag": "competition-evaluate"
+        },
+        "host": "https://worksheets.codalab.org",
+        "log_worksheet_uuid": "0xa8f67766fbe245cf976fe707555d75a2",
+        "make_predictions_public": false,
+        "max_leaderboard_size": 10000,
+        "max_submissions_per_period": 5,
+        "max_submissions_total": 20,
+        "metadata": {
+            "name": "Hucvl-Recipe Challenge"
+        },
+        "predict": {
+            "depth": 10,
+            "metadata": {},
+            "mimic": [
+                {
+                    "new": "0xc6bdc1125b7a4caca4f4734fa188d235",
+                    "old": "0xa3f52fd101f543b5912d51057b6fc47a"
+                }
+            ],
+            "tag": "competition-predict"
+        },
+        "quota_period_seconds": 86400,
+        "refresh_period_seconds": 60,
+        "score_specs": [
+            {
+                "key": "/out.json:textual_cloze",
+                "name": "textual_cloze"
+            },
+            {
+                "key": "/out.json:visual_cloze",
+                "name": "visual_cloze"
+            },
+            {
+                "key": "/out.json:visual_coherence",
+                "name": "visual_coherence"
+            },
+            {
+                "key": "/out.json:visual_ordering",
+                "name": "visual_ordering"
+            }
+        ],
+        "submission_tag": "recipeqa-challenge"
+    },
+    "leaderboard": [
+        {
+            "bundle": {
+                "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py predictions.json data.json out.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
+                        "parent_name": "evaluate.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
+                        "parent_name": "recipeqa36k_test_hash.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
+                        "parent_name": "asane-predictions-Comatch-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
+                    }
+                ],
+                "id": "0x92d3363cd66149899503de5cbb7041cd",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1545058056,
+                    "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
+                    "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
+                    "name": "asane-predictions-Comatch-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "competition-evaluate"
+                    ]
+                },
+                "owner": {
+                    "id": "0xf2c582a12d9d4890b319738898518ef7",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "failed",
+                "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+            },
+            "scores": {
+                "textual_cloze": null,
+                "visual_cloze": null,
+                "visual_coherence": null,
+                "visual_ordering": null
+            },
+            "submission": {
+                "created": 1543503686,
+                "description": "CoMatch(unimodal) | (SMILE Lab)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "asane"
+            }
+        }
+    ],
+    "updated": 1545733280.646932
+}
