@@ -16,7 +16,7 @@ export const RANK_IS_SORT = false; // 排行榜指标是否支持排序
 export const DESC_LIST = [
   {
     title: "What is JDMPSD?",
-    desc: "<p> <span><b>JD M</b>ultimodal <b>P</b>roduct <b>S</b>ummarization <b>D</b>ataset (JDMPSD) </span>is a dataset collected from JD.COM, a mainstream Chinese e-commerce platform. Each sample is a (product textual description, product knowledge base, product image, product summary) tuple. The dataset contains three product categories, including Cases&Bags, Home Appliances, and Clothing..</p>",
+    desc: "<p> <span><b>JD M</b>ultimodal <b>P</b>roduct <b>S</b>ummarization <b>D</b>ataset (JDMPSD) </span>is a dataset collected from JD.COM, a mainstream Chinese e-commerce platform. Each sample is a (product textual description, product knowledge base, product image, product summary) tuple. The dataset contains three product categories, including Cases&Bags, Home Appliances, and Clothing.</p>",
     downList: [
       {
         title: "Explore JDMPSD and model predictions",
@@ -30,7 +30,7 @@ export const DESC_LIST = [
   },
   {
     title: "What is JDMPSD?",
-    desc: "<p> <span><b>JD M</b>ultimodal <b>P</b>roduct <b>S</b>ummarization <b>D</b>ataset (JDMPSD) </span>is a dataset collected from JD.COM, a mainstream Chinese e-commerce platform. Each sample is a (product textual description, product knowledge base, product image, product summary) tuple. The dataset contains three product categories, including Cases&Bags, Home Appliances, and Clothing..</p>",
+    desc: "<p> <span><b>JD M</b>ultimodal <b>P</b>roduct <b>S</b>ummarization <b>D</b>ataset (JDMPSD) </span>is a dataset collected from JD.COM, a mainstream Chinese e-commerce platform. Each sample is a (product textual description, product knowledge base, product image, product summary) tuple. The dataset contains three product categories, including Cases&Bags, Home Appliances, and Clothing.</p>",
     downList: [
       {
         title: "Explore JDMPSD and model predictions",
