@@ -13,7 +13,7 @@ const EMPTY_TEXT='-'
 export const tranferRankList=(rankData)=>{
     const {leaderboard=[]}=rankData
     const rankList =leaderboard
-    console.log(rankList,'ranklist')
+    // console.log(rankList,'ranklist')
     return rankList.map((item,index)=>{
         const {submission,scores}=item
         return {
