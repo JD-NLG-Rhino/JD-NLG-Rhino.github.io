@@ -1,5 +1,5 @@
-export const PROJECT_TITLE = "NLP-2022"; //  项目标题
-export const PROJECT_TITLE_DESC = "JD Multimodal Product Summary Challenge"; // 项目标题说明文案
+export const PROJECT_TITLE = "NLPCC 2022 Shared Task"; //  项目标题
+export const PROJECT_TITLE_DESC = "JD Multimodal Product Summarization Challenge"; // 项目标题说明文案
 
 export const HEADER_BG_IMG =
   "//storage.jd.com/xiaozhi-web-portal/assets/img/bg-head.png"; // 顶部背景图
