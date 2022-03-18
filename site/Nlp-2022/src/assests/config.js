@@ -6,7 +6,7 @@ export const HEADER_BG_IMG =
 
 export const RANK_LABEL = "Leaderboard"; // 排行榜 label
 
-export const RANK_IS_SORT = true; // 排行榜指标是否支持排序
+export const RANK_IS_SORT = false; // 排行榜指标是否支持排序
 
 /**
  * title 标题
