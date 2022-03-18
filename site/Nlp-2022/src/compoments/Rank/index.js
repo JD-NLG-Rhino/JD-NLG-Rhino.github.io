@@ -1,6 +1,6 @@
 import { Table } from "antd";
-import { RANK_LABEL, RANK_IS_SORT } from "../../assests/constant";
-import rankData from "../../assests/out.json";
+import { RANK_LABEL, RANK_IS_SORT } from "../../assests/config";
+import rankData from "../../assests/rank.json";
 import {tranferRankList} from './util'
 import "./index.scss";
 
@@ -27,42 +27,42 @@ const getTableColumns = () => {
       // width:300
     },
     {
-      title: "textual_cloze",
-      dataIndex: "textual_cloze",
+      title: "ROUGE-1",
+      dataIndex: "ROUGE1",
       align,
       ...(RANK_IS_SORT
         ? {
-            sorter: (a, b) => a.textual_cloze - b.textual_cloze,
+            sorter: (a, b) => a.ROUGE1 - b.ROUGE1,
           }
         : {}),
     },
     {
-      title: "visual_cloze",
-      dataIndex: "visual_cloze",
+      title: "ROUGE-2",
+      dataIndex: "ROUGE2",
       align,
       ...(RANK_IS_SORT
         ? {
-            sorter: (a, b) => a.visual_cloze - b.visual_cloze,
+            sorter: (a, b) => a.ROUGE2 - b.ROUGE2,
           }
         : {}),
     },
     {
-      title: "visual_coherence",
-      dataIndex: "visual_coherence",
+      title: "ROUGE-L",
+      dataIndex: "ROUGEL",
       align,
       ...(RANK_IS_SORT
         ? {
-            sorter: (a, b) => a.visual_coherence - b.visual_coherence,
+            sorter: (a, b) => a.ROUGEL - b.ROUGEL,
           }
         : {}),
     },
     {
-      title: "visual_ordering",
-      dataIndex: "visual_ordering",
+      title: "ROUGE-AVG",
+      dataIndex: "ROUGEAVG",
       align,
       ...(RANK_IS_SORT
         ? {
-            sorter: (a, b) => a.visual_ordering - b.visual_ordering,
+            sorter: (a, b) => a.ROUGEAVG - b.ROUGEAVG,
           }
         : {}),
     },

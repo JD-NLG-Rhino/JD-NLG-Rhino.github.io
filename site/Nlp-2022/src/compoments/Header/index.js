@@ -1,4 +1,4 @@
-import {PROJECT_TITLE,PROJECT_TITLE_DESC,HEADER_BG_IMG} from '../../assests/constant'
+import {PROJECT_TITLE,PROJECT_TITLE_DESC,HEADER_BG_IMG} from '../../assests/config'
 import './index.scss'
 const Header =()=>{
     return (

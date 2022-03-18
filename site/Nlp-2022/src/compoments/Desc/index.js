@@ -1,4 +1,4 @@
-import { DESC_LIST } from "../../assests/constant";
+import { DESC_LIST } from "../../assests/config";
 import { Button } from "antd";
 import "./index.scss";
 const Desc = () => {
