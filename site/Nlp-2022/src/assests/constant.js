@@ -1,5 +1,5 @@
 export const PROJECT_TITLE='NLP-2020'  //  项目标题
-export const PROJECT_TITLE_DESC='2'  // 项目标题说明文案
+export const PROJECT_TITLE_DESC='测试数据更新'  // 项目标题说明文案
 
 export const HEADER_BG_IMG="//storage.jd.com/xiaozhi-web-portal/assets/img/bg-head.png"
 
