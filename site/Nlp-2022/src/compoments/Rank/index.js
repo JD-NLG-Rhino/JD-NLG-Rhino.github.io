@@ -1,14 +1,16 @@
 import { Table } from "antd";
 import { RANK_LABEL, RANK_IS_SORT } from "../../assests/constant";
 import rankData from "../../assests/out.json";
+import {tranferRankList} from './util'
 import "./index.scss";
 
 const getTableColumns = () => {
+  const align='center'
   return [
     {
       title: "Rank",
-      dataIndex: "Rank",
-      align: "center",
+      dataIndex: "rank",
+      align,
       render: (text, record) => {
         return (
           <>
@@ -20,13 +22,13 @@ const getTableColumns = () => {
     },
     {
       title: "Model",
-      dataIndex: "Model",
-      align: "center",
+      dataIndex: "model",
+      align,
     },
     {
       title: "textual_cloze",
       dataIndex: "textual_cloze",
-      align: "center",
+      align,
       ...(RANK_IS_SORT
         ? {
             sorter: (a, b) => a.textual_cloze - b.textual_cloze,
@@ -36,7 +38,7 @@ const getTableColumns = () => {
     {
       title: "visual_cloze",
       dataIndex: "visual_cloze",
-      align: "center",
+      align,
       ...(RANK_IS_SORT
         ? {
             sorter: (a, b) => a.visual_cloze - b.visual_cloze,
@@ -46,7 +48,7 @@ const getTableColumns = () => {
     {
       title: "visual_coherence",
       dataIndex: "visual_coherence",
-      align: "center",
+      align,
       ...(RANK_IS_SORT
         ? {
             sorter: (a, b) => a.visual_coherence - b.visual_coherence,
@@ -56,7 +58,7 @@ const getTableColumns = () => {
     {
       title: "visual_ordering",
       dataIndex: "visual_ordering",
-      align: "center",
+      align,
       ...(RANK_IS_SORT
         ? {
             sorter: (a, b) => a.visual_ordering - b.visual_ordering,
@@ -73,7 +75,7 @@ const Rank = () => {
       <div className="table">
         <Table
           columns={getTableColumns()}
-          dataSource={rankData}
+          dataSource={tranferRankList(rankData)}
           pagination={false}
         />
       </div>

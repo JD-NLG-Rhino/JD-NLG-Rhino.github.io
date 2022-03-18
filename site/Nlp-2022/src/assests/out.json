@@ -1,8 +1,8 @@
 [
     {
-        "Rank":"1",
+        "rank":"1",
         "updateTime":"2020-3-15",
-         "Model":"RICOH_SRCB_DML",
+         "model":"RICOH_SRCB_DML",
          "textual_cloze":"15",
          "visual_cloze":"24",
          "visual_coherence":"132",
