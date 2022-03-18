@@ -1,0 +1,41 @@
+.desc-module{
+    margin-right: 10%;
+    width:25%;
+    min-height: 200px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+    >div{
+        margin-bottom: 24px;
+    >.title{
+        font-size: 14px;
+        padding-bottom: 4px;
+        border-bottom: 2px solid #ddd;
+        display: flex;
+        align-items: center;
+        &::before{
+            background: #5580e9;
+        display: inline-block;
+        flex-shrink: 0;
+        height: 14px;
+        margin-right: 10px;
+        width: 4px;
+        content: '';
+        }
+    }
+    >.desc{
+        margin-left: 8px;
+        margin-top: 12px;
+    }
+    .url-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+        .item{
+            margin-bottom: 12px;
+        }
+    }
+}
+}
