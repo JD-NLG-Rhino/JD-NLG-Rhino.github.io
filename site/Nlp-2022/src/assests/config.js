@@ -15,8 +15,8 @@ export const RANK_IS_SORT = false; // 排行榜指标是否支持排序
  */
 export const DESC_LIST = [
   {
-    title: "What is SQuAD?",
-    desc: "<p> <span><b>S</b>tanford <b>Qu</b>estion <b>A</b>nswering <b>D</b>ataset (SQuAD) </span>is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or <i>span</i>, from the corresponding reading passage, or the question might be unanswerable.</p>",
+    title: "What is JDMPSD?",
+    desc: "<p> <span><b>JD M</b>ultimodal <b>P</b>roduct <b>S</b>ummarization <b>D</b>ataset (JDMPSD) </span>is a Summarization dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or <i>span</i>, from the corresponding reading passage, or the question might be unanswerable.</p>",
     downList: [
       {
         title: "Explore SQuAD2.0 and model predictions",
