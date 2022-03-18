@@ -24,6 +24,7 @@ const getTableColumns = () => {
       title: "Model",
       dataIndex: "model",
       align,
+      // width:300
     },
     {
       title: "textual_cloze",
