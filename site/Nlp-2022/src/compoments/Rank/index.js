@@ -5,7 +5,7 @@ import { tranferRankList,EMPTY_TEXT } from "./util";
 import "./index.scss";
 import { useEffect,useState } from "react";
 
-const getTableColumns = () => {
+const getTableColumns = (isPhone) => {
   const align = "center";
   return [
     {
@@ -140,7 +140,7 @@ const getTableColumns = () => {
       title: "AVG",
       dataIndex: "score_avg",
       align,
-      fixed:"right",
+      fixed: isPhone?false:"right",
       ...(RANK_IS_SORT
         ? {
             sorter: (a, b) => a.score_avg - b.score_avg,
@@ -162,8 +162,8 @@ const Rank = () => {
       <div className="title">{RANK_LABEL}</div>
       <div className="table">
         <Table
-         scroll={{ x:isPhone?600: 1500 }}
-          columns={getTableColumns()}
+         scroll={{ x:isPhone?1000: 1500 }}
+          columns={getTableColumns(isPhone)}
           dataSource={tranferRankList(rankData)}
           pagination={false}
         />
