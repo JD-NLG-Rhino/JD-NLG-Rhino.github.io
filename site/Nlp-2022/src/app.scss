@@ -14,19 +14,4 @@
         justify-content: center;
         padding-bottom: 26px;
     }
-    @media screen and (max-width: 1000px) {
-        .content{
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-content: center;
-            >.desc-module{
-                width:80% ;
-                margin-right: 0px;
-            }
-            >.rank{
-                width:80% ;
-                margin-bottom: 24px;
-            }
-        }
-    }
 }

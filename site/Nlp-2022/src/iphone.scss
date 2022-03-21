@@ -1,0 +1,29 @@
+@media screen and (max-width: 1000px) {
+    .header{
+        >.title{
+            font-size: 24px;
+        }
+        >.desc{
+            font-size: 14px;
+        }
+    }
+    .content{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+        >.desc-module{
+            width:98% ;
+            margin-right: 0px;
+        }
+        >.rank{
+            width:98% ;
+            margin-bottom: 24px;
+            .ant-table{
+                td{
+                    padding: 4px !important;
+                }
+            }
+        }
+    }
+}
