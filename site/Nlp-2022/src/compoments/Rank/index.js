@@ -3,6 +3,7 @@ import { RANK_LABEL, RANK_IS_SORT } from "../../assests/config";
 import rankData from "../../assests/rank.json";
 import { tranferRankList,EMPTY_TEXT } from "./util";
 import "./index.scss";
+import { useEffect } from "react";
 
 const getTableColumns = () => {
   const align = "center";
@@ -150,12 +151,18 @@ const getTableColumns = () => {
 };
 
 const Rank = () => {
+  let isPhone=false
+  useEffect(()=>{
+    if(window.screen.width<1000){
+      isPhone=true
+    }
+  },[])
   return (
     <div className="rank">
       <div className="title">{RANK_LABEL}</div>
       <div className="table">
         <Table
-         scroll={{ x: 1500 }}
+         scroll={{ x:isPhone?600: 1500 }}
           columns={getTableColumns()}
           dataSource={tranferRankList(rankData)}
           pagination={false}
