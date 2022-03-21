@@ -11,6 +11,7 @@ const getTableColumns = () => {
       title: "Rank",
       dataIndex: "rank",
       align,
+      fixed:true,
       render: (text, record) => {
         return (
           <>
@@ -24,6 +25,7 @@ const getTableColumns = () => {
       title: "Model",
       dataIndex: "model",
       align,
+      fixed:true,
       render:(text,record)=>{
         return <div>
           <div>{record.description}</div>
@@ -137,6 +139,7 @@ const getTableColumns = () => {
       title: "AVG",
       dataIndex: "score_avg",
       align,
+      fixed:true,
       ...(RANK_IS_SORT
         ? {
             sorter: (a, b) => a.score_avg - b.score_avg,
