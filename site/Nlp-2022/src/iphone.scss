@@ -1,5 +1,6 @@
 @media screen and (max-width: 1000px) {
     .header{
+        height: 145px;
         >.title{
             font-size: 24px;
         }
@@ -20,6 +21,9 @@
             width:98% ;
             margin-bottom: 24px;
             .ant-table{
+                .ant-table-content{
+                    overflow-x: auto;
+                }
                 td{
                     padding: 4px !important;
                 }
