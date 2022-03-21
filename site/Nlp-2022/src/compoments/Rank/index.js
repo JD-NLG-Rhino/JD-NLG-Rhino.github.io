@@ -3,7 +3,7 @@ import { RANK_LABEL, RANK_IS_SORT } from "../../assests/config";
 import rankData from "../../assests/rank.json";
 import { tranferRankList,EMPTY_TEXT } from "./util";
 import "./index.scss";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 
 const getTableColumns = () => {
   const align = "center";
@@ -151,10 +151,10 @@ const getTableColumns = () => {
 };
 
 const Rank = () => {
-  let isPhone=false
+  const [isPhone,setIsPhone]=false
   useEffect(()=>{
     if(window.screen.width<1000){
-      isPhone=true
+      setIsPhone(true)
     }
   },[])
   return (
