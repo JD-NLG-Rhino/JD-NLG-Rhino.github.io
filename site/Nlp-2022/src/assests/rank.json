@@ -69,1581 +69,573 @@
     ],
     "submission_tag": "jd-multimodal-product-summary-challenge"
   },
-  "leaderboard": [
+  "leaderboard":[
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-1(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 46.0,
+          "ROUGE-2": 26.0,
+          "ROUGE-L": 30.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 46.0,
-        "ROUGE-2": 26.0,
-        "ROUGE-L": 30.0,
-        "ROUGE-AVG": 34.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 46.0,
+          "ROUGE-2": 26.0,
+          "ROUGE-L": 30.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-1(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 46.0,
+          "ROUGE-2": 26.0,
+          "ROUGE-L": 30.0
+        }
+      },
+      "score_avg": 34.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-2(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 45.0,
+          "ROUGE-2": 25.0,
+          "ROUGE-L": 29.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 45.0,
-        "ROUGE-2": 25.0,
-        "ROUGE-L": 29.0,
-        "ROUGE-AVG": 33.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 45.0,
+          "ROUGE-2": 25.0,
+          "ROUGE-L": 29.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-2(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 45.0,
+          "ROUGE-2": 25.0,
+          "ROUGE-L": 29.0
+        }
+      },
+      "score_avg": 33.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-3(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 44.0,
+          "ROUGE-2": 24.0,
+          "ROUGE-L": 28.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 44.0,
-        "ROUGE-2": 24.0,
-        "ROUGE-L": 28.0,
-        "ROUGE-AVG": 32.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 44.0,
+          "ROUGE-2": 24.0,
+          "ROUGE-L": 28.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-3(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 44.0,
+          "ROUGE-2": 24.0,
+          "ROUGE-L": 28.0
+        }
+      },
+      "score_avg": 32.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-4(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 43.0,
+          "ROUGE-2": 23.0,
+          "ROUGE-L": 27.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 43.0,
-        "ROUGE-2": 23.0,
-        "ROUGE-L": 27.0,
-        "ROUGE-AVG": 31.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 43.0,
+          "ROUGE-2": 23.0,
+          "ROUGE-L": 27.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-4(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 43.0,
+          "ROUGE-2": 23.0,
+          "ROUGE-L": 27.0
+        }
+      },
+      "score_avg": 31.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-5(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 42.0,
+          "ROUGE-2": 22.0,
+          "ROUGE-L": 26.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 42.0,
-        "ROUGE-2": 22.0,
-        "ROUGE-L": 26.0,
-        "ROUGE-AVG": 30.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 42.0,
+          "ROUGE-2": 22.0,
+          "ROUGE-L": 26.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-5(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 42.0,
+          "ROUGE-2": 22.0,
+          "ROUGE-L": 26.0
+        }
+      },
+      "score_avg": 30.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-6(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 41.0,
+          "ROUGE-2": 21.0,
+          "ROUGE-L": 25.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 41.0,
-        "ROUGE-2": 21.0,
-        "ROUGE-L": 25.0,
-        "ROUGE-AVG": 29.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 41.0,
+          "ROUGE-2": 21.0,
+          "ROUGE-L": 25.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-6(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 41.0,
+          "ROUGE-2": 21.0,
+          "ROUGE-L": 25.0
+        }
+      },
+      "score_avg": 29.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-7(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 40.0,
+          "ROUGE-2": 20.0,
+          "ROUGE-L": 24.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 40.0,
-        "ROUGE-2": 20.0,
-        "ROUGE-L": 24.0,
-        "ROUGE-AVG": 28.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 40.0,
+          "ROUGE-2": 20.0,
+          "ROUGE-L": 24.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-7(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 40.0,
+          "ROUGE-2": 20.0,
+          "ROUGE-L": 24.0
+        }
+      },
+      "score_avg": 28.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-8(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 39.0,
+          "ROUGE-2": 19.0,
+          "ROUGE-L": 23.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 39.0,
-        "ROUGE-2": 19.0,
-        "ROUGE-L": 23.0,
-        "ROUGE-AVG": 27.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 39.0,
+          "ROUGE-2": 19.0,
+          "ROUGE-L": 23.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-8(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 39.0,
+          "ROUGE-2": 19.0,
+          "ROUGE-L": 23.0
+        }
+      },
+      "score_avg": 27.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-9(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 38.0,
+          "ROUGE-2": 18.0,
+          "ROUGE-L": 22.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 38.0,
-        "ROUGE-2": 18.0,
-        "ROUGE-L": 22.0,
-        "ROUGE-AVG": 26.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 38.0,
+          "ROUGE-2": 18.0,
+          "ROUGE-L": 22.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-9(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 38.0,
+          "ROUGE-2": 18.0,
+          "ROUGE-L": 22.0
+        }
+      },
+      "score_avg": 26.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-10(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 37.0,
+          "ROUGE-2": 17.0,
+          "ROUGE-L": 21.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 37.0,
-        "ROUGE-2": 17.0,
-        "ROUGE-L": 21.0,
-        "ROUGE-AVG": 25.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 37.0,
+          "ROUGE-2": 17.0,
+          "ROUGE-L": 21.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-10(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 37.0,
+          "ROUGE-2": 17.0,
+          "ROUGE-L": 21.0
+        }
+      },
+      "score_avg": 25.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-11(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 36.0,
+          "ROUGE-2": 16.0,
+          "ROUGE-L": 20.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 36.0,
-        "ROUGE-2": 16.0,
-        "ROUGE-L": 20.0,
-        "ROUGE-AVG": 24.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 36.0,
+          "ROUGE-2": 16.0,
+          "ROUGE-L": 20.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-11(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 36.0,
+          "ROUGE-2": 16.0,
+          "ROUGE-L": 20.0
+        }
+      },
+      "score_avg": 24.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-12(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 35.0,
+          "ROUGE-2": 15.0,
+          "ROUGE-L": 19.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 35.0,
-        "ROUGE-2": 15.0,
-        "ROUGE-L": 19.0,
-        "ROUGE-AVG": 23.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 35.0,
+          "ROUGE-2": 15.0,
+          "ROUGE-L": 19.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-12(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 35.0,
+          "ROUGE-2": 15.0,
+          "ROUGE-L": 19.0
+        }
+      },
+      "score_avg": 23.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-13(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 34.0,
+          "ROUGE-2": 14.0,
+          "ROUGE-L": 18.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 34.0,
-        "ROUGE-2": 14.0,
-        "ROUGE-L": 18.0,
-        "ROUGE-AVG": 22.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 34.0,
+          "ROUGE-2": 14.0,
+          "ROUGE-L": 18.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-13(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 34.0,
+          "ROUGE-2": 14.0,
+          "ROUGE-L": 18.0
+        }
+      },
+      "score_avg": 22.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-14(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 33.0,
+          "ROUGE-2": 13.0,
+          "ROUGE-L": 17.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 33.0,
-        "ROUGE-2": 13.0,
-        "ROUGE-L": 17.0,
-        "ROUGE-AVG": 21.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 33.0,
+          "ROUGE-2": 13.0,
+          "ROUGE-L": 17.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-14(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 33.0,
+          "ROUGE-2": 13.0,
+          "ROUGE-L": 17.0
+        }
+      },
+      "score_avg": 21.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-15(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 32.0,
+          "ROUGE-2": 12.0,
+          "ROUGE-L": 16.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 32.0,
-        "ROUGE-2": 12.0,
-        "ROUGE-L": 16.0,
-        "ROUGE-AVG": 20.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 32.0,
+          "ROUGE-2": 12.0,
+          "ROUGE-L": 16.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-15(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 32.0,
+          "ROUGE-2": 12.0,
+          "ROUGE-L": 16.0
+        }
+      },
+      "score_avg": 20.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-16(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 31.0,
+          "ROUGE-2": 11.0,
+          "ROUGE-L": 15.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 31.0,
-        "ROUGE-2": 11.0,
-        "ROUGE-L": 15.0,
-        "ROUGE-AVG": 19.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 31.0,
+          "ROUGE-2": 11.0,
+          "ROUGE-L": 15.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-16(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 31.0,
+          "ROUGE-2": 11.0,
+          "ROUGE-L": 15.0
+        }
+      },
+      "score_avg": 19.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-17(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 30.0,
+          "ROUGE-2": 10.0,
+          "ROUGE-L": 14.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 30.0,
-        "ROUGE-2": 10.0,
-        "ROUGE-L": 14.0,
-        "ROUGE-AVG": 18.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 30.0,
+          "ROUGE-2": 10.0,
+          "ROUGE-L": 14.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-17(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 30.0,
+          "ROUGE-2": 10.0,
+          "ROUGE-L": 14.0
+        }
+      },
+      "score_avg": 18.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-18(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 29.0,
+          "ROUGE-2": 9.0,
+          "ROUGE-L": 13.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 29.0,
-        "ROUGE-2": 9.0,
-        "ROUGE-L": 13.0,
-        "ROUGE-AVG": 17.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 29.0,
+          "ROUGE-2": 9.0,
+          "ROUGE-L": 13.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-18(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 29.0,
+          "ROUGE-2": 9.0,
+          "ROUGE-L": 13.0
+        }
+      },
+      "score_avg": 17.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-19(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 28.0,
+          "ROUGE-2": 8.0,
+          "ROUGE-L": 12.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 28.0,
-        "ROUGE-2": 8.0,
-        "ROUGE-L": 12.0,
-        "ROUGE-AVG": 16.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 28.0,
+          "ROUGE-2": 8.0,
+          "ROUGE-L": 12.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-19(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 28.0,
+          "ROUGE-2": 8.0,
+          "ROUGE-L": 12.0
+        }
+      },
+      "score_avg": 16.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-20(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 27.0,
+          "ROUGE-2": 7.0,
+          "ROUGE-L": 11.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 27.0,
-        "ROUGE-2": 7.0,
-        "ROUGE-L": 11.0,
-        "ROUGE-AVG": 15.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 27.0,
+          "ROUGE-2": 7.0,
+          "ROUGE-L": 11.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-20(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 27.0,
+          "ROUGE-2": 7.0,
+          "ROUGE-L": 11.0
+        }
+      },
+      "score_avg": 15.0
     },
     {
-      "bundle": {
-        "args": "run evaluate.py:0xd8d30a3cd83e46e38d531aa5f1a98a9c data.json:0xc6bdc1125b7a4caca4f4734fa188d235 predictions.json:0xb6339d40f32b4003ad3bd1ccdf2fe4a8 \"python evaluate.py predictions.json data.json out.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-        "bundle_type": "run",
-        "command": "python evaluate.py predictions.json data.json out.json",
-        "data_hash": null,
-        "dependencies": [
-          {
-            "child_path": "evaluate.py",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "evaluate.py",
-            "parent_path": "",
-            "parent_uuid": "0xd8d30a3cd83e46e38d531aa5f1a98a9c"
-          },
-          {
-            "child_path": "data.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "recipeqa36k_test_hash.json",
-            "parent_path": "",
-            "parent_uuid": "0xc6bdc1125b7a4caca4f4734fa188d235"
-          },
-          {
-            "child_path": "predictions.json",
-            "child_uuid": "0x92d3363cd66149899503de5cbb7041cd",
-            "parent_name": "asane-predictions-Comatch-predict",
-            "parent_path": "",
-            "parent_uuid": "0xb6339d40f32b4003ad3bd1ccdf2fe4a8"
-          }
-        ],
-        "id": "0x92d3363cd66149899503de5cbb7041cd",
-        "is_anonymous": false,
-        "metadata": {
-          "actions": [],
-          "allow_failed_dependencies": false,
-          "created": 1545058056,
-          "description": "{\"submit_id\": \"0xa4f42020c07944f897c93e3e0111069b\", \"predict_id\": \"0xb6339d40f32b4003ad3bd1ccdf2fe4a8\", \"submitter_id\": \"0x2dfad31a1e134801b9cef2bc01da93e2\"}",
-          "failure_message": " Parent bundles failed: 0xb6339d40f32b4003ad3bd1ccdf2fe4a8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
-          "name": "asane-predictions-Comatch-results",
-          "request_cpus": 1,
-          "request_disk": "",
-          "request_docker_image": "codalab/ubuntu:1.9",
-          "request_gpus": 0,
-          "request_memory": "2g",
-          "request_network": false,
-          "request_priority": 0,
-          "request_queue": "",
-          "request_time": "",
-          "tags": [
-            "competition-evaluate"
-          ]
-        },
-        "owner": {
-          "id": "0xf2c582a12d9d4890b319738898518ef7",
-          "type": "users"
-        },
-        "permission": 2,
-        "permission_spec": "all",
-        "state": "successed",
-        "uuid": "0x92d3363cd66149899503de5cbb7041cd"
+      "created": 1543503686,
+      "description": "K-PLUG-21(unimodal)",
+      "organization": "JD Lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 26.0,
+          "ROUGE-2": 6.0,
+          "ROUGE-L": 10.0
+        }
       },
-      "scores": {
-        "ROUGE-1": 26.0,
-        "ROUGE-2": 6.0,
-        "ROUGE-L": 10.0,
-        "ROUGE-AVG": 14.0
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 26.0,
+          "ROUGE-2": 6.0,
+          "ROUGE-L": 10.0
+        }
       },
-      "submission": {
-        "created": 1543503686,
-        "description": "K-PLUG-21(unimodal) | (JD Lab)",
-        "num_period_submissions": 0,
-        "num_total_submissions": 1,
-        "public": true,
-        "user_name": "asane"
-      }
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 26.0,
+          "ROUGE-2": 6.0,
+          "ROUGE-L": 10.0
+        }
+      },
+      "score_avg": 14.0
     }
   ],
   "updated": 1545733280.646932
