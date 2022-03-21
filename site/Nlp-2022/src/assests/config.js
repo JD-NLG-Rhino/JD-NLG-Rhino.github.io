@@ -14,45 +14,52 @@ export const RANK_IS_SORT = false; // 排行榜指标是否支持排序
  */
 export const DESC_LIST = [
   {
-    title: "What is CEPSUM?",
-    desc: "<p> CEPSUM is a <span><b>C</b>hinese <b>E</b>-commerce <b>P</b>roduct <b>SUM</b>marization </span> dataset that is collected from JD.COM, a mainstream Chinese e-commerce platform. Each sample is a (product textual description, product knowledge base, product image, product summary) tuple. The dataset contains three product categories, including Cases&Bags, Home Appliances, and Clothing. The JD Multimodal Product Summarization Challenge aims at generating a condensed textual summary for a given product.</p>",
+    title: "What is CEPSUM 2.0?",
+    desc: "<p> CEPSUM is a <span><b>C</b>hinese <b>E</b>-commerce <b>P</b>roduct <b>SUM</b>marization </span> dataset that is collected from JD.COM, a mainstream Chinese e-commerce platform,which aims at developing a summarizer to generate a condensed textual summary for a given product. Each sample in CEPSUM 2.0 is a (product textual description, product knowledge base, product image, product summary) tuple, where the product knowledge base is a new feature beyond CEPSUM. The dataset contains three product categories, including Cases&Bags, Home Appliances, and Clothing. More information can be found in our CEPSUM paper.</p>",
     downList: [
       {
-        title: "More information is here",
-        url: "https://github.com/jd-aig/multimodal-product-summarization-challenge",
+        title: "CEPSUM paper",
+        url: "https://ojs.aaai.org/index.php/AAAI/article/view/6332",
       },
     ],
   },
   {
-    title: "Reference.",
+    title: "Getting the Data",
+    desc: "<p> If you are interested in our challenge, please fill out the application form and email lihaoran24 (AT) jd.com (Please note that you participate in the challenge). The dataset will be sent to you.</p>",
     downList: [
       {
-        title: "[1] Li et. al., Aspect-Aware Multimodal Summarization for Chinese E-Commerce Products. AAAI 2020.",
-        url: "https://rajpurkar.github.io/SQuAD-explorer/explore/v2.0/dev/",
-      },
-      {
-        title: "[2] Yuan et. al., On the Faithfulness for E-commerce Product Summarization. COLING 2020.",
-        url: "https://rajpurkar.github.io/SQuAD-explorer/explore/v2.0/dev/",
-      },
-      {
-        title: "[3] Xu et. al., Self-Attention Guided Copy Mechanism for Abstractive Summarization. ACL 2020.",
-        url: "https://rajpurkar.github.io/SQuAD-explorer/explore/v2.0/dev/",
-      },
-      {
-        title: "[4] Xu et. al., K-PLUG: Knowledge-injected Pre-trained Language Model for Natural Language Understanding and Generation in E-Commerce. Findings of ACL: EMNLP 2021.",
-        url: "https://rajpurkar.github.io/SQuAD-explorer/explore/v2.0/dev/",
+        title: "Data Application Form",
+        url: "https://nlp-object-store.s3.cn-north-1.jdcloud-oss.com/multimodal-product-summarization-challenge/Application_terms.docx",
       },
     ],
   },
   {
-    title: "What is CEPSUM?",
-    desc: "<p> CEPSUM is a <span><b>C</b>hinese <b>E</b>-commerce <b>P</b>roduct <b>SUM</b>marization </span> dataset that is collected from JD.COM, a mainstream Chinese e-commerce platform. Each sample is a (product textual description, product knowledge base, product image, product summary) tuple. The dataset contains three product categories, including Cases&Bags, Home Appliances, and Clothing. The JD Multimodal Product Summarization Challenge aims at generating a condensed textual summary for a given product.</p>",
+    title: "Baselines",
+    desc: "<p> We offer baseline models to help you get a quick-start on this challenge. K-PLUG is a Transformer-based seq2seq model that is pre-trained on a large-scale e-commerce corpus. The multimodal version of K-PLUG is also provided.</p>"
     downList: [
       {
-        title: "More information is here",
-        url: "https://github.com/jd-aig/multimodal-product-summarization-challenge",
+        title: "K-PLUG",
+        url: "https://github.com/xu-song/k-plug",
+      },
+      {
+        title: "Multimodal K-PLUG",
+        url: "https://github.com/WaveLi123/m-kplug",
       },
     ],
+  },
+  {
+    title: "Evaluations",
+    desc: "<p> We compute the average score of ROUGE-1, ROUGE-2, and ROUGE-L metrics with ROUGE-1.5.5 toolkits, over three product categories. Please submit your model to get the results on the test set according to the following instructions.</p>"
+    downList: [
+      {
+        title: "Submission Instructions",
+        url: "",
+      },
+    ],
+  },
+  {
+    title: "References",
+    desc: "<p> [1] Li et. al., Aspect-Aware Multimodal Summarization for Chinese E-Commerce Products. AAAI 2020.</p><p>[2] Yuan et. al., On the Faithfulness for E-commerce Product Summarization. COLING 2020.</p><p>[3] Xu et. al., Self-Attention Guided Copy Mechanism for Abstractive Summarization. ACL 2020.</p><p>[4] Xu et. al., K-PLUG: Knowledge-injected Pre-trained Language Model for Natural Language Understanding and Generation in E-Commerce. Findings of ACL: EMNLP 2021.</p>",
   },
   {
     title: "Have Questions?",
