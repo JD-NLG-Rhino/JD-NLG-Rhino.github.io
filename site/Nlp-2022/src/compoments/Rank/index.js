@@ -11,6 +11,7 @@ const getTableColumns = () => {
       title: "Rank",
       dataIndex: "rank",
       align,
+      fixed: 'left',
       render: (text, record) => {
         return (
           <>
@@ -24,7 +25,7 @@ const getTableColumns = () => {
       title: "Model",
       dataIndex: "model",
       align,
-
+      fixed: 'left',
       render:(text,record)=>{
         return <div>
           <div>{record.description}</div>
@@ -138,6 +139,7 @@ const getTableColumns = () => {
       title: "AVG",
       dataIndex: "score_avg",
       align,
+      fixed:"right",
       ...(RANK_IS_SORT
         ? {
             sorter: (a, b) => a.score_avg - b.score_avg,
@@ -153,6 +155,7 @@ const Rank = () => {
       <div className="title">{RANK_LABEL}</div>
       <div className="table">
         <Table
+         scroll={{ x: 1500 }}
           columns={getTableColumns()}
           dataSource={tranferRankList(rankData)}
           pagination={false}
