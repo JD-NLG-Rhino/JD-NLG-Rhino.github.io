@@ -27,6 +27,7 @@ const getTableColumns = (isPhone) => {
       dataIndex: "model",
       align,
       fixed: 'left',
+      width:isPhone?0:260,
       render:(text,record)=>{
         return <div>
           <div>{record.description}</div>
