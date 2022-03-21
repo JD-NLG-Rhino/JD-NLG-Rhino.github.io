@@ -35,7 +35,7 @@ export const DESC_LIST = [
   },
   {
     title: "Baselines",
-    desc: "<p> We offer baseline models to help you get a quick-start on this challenge. K-PLUG is a Transformer-based seq2seq model that is pre-trained on a large-scale e-commerce corpus. The multimodal version of K-PLUG is also provided.</p>"
+    desc: "<p> We offer baseline models to help you get a quick-start on this challenge. K-PLUG is a Transformer-based seq2seq model that is pre-trained on a large-scale e-commerce corpus. The multimodal version of K-PLUG is also provided.</p>",
     downList: [
       {
         title: "K-PLUG",
@@ -49,7 +49,7 @@ export const DESC_LIST = [
   },
   {
     title: "Evaluations",
-    desc: "<p> We compute the average score of ROUGE-1, ROUGE-2, and ROUGE-L metrics with ROUGE-1.5.5 toolkits, over three product categories. Please submit your model to get the results on the test set according to the following instructions.</p>"
+    desc: "<p> We compute the average score of ROUGE-1, ROUGE-2, and ROUGE-L metrics with ROUGE-1.5.5 toolkits, over three product categories. Please submit your model to get the results on the test set according to the following instructions.</p>",
     downList: [
       {
         title: "Submission Instructions",
