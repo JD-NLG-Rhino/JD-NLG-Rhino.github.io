@@ -22,6 +22,9 @@ padding: 12px;
 }
 >.table{
     margin-top: 12px;
+    .ant-table-content{
+        overflow-x: auto;
+    }
     .update-time{
         background-color: #777;
         border-radius: 4px;
