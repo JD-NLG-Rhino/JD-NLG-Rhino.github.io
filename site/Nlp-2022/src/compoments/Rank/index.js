@@ -151,7 +151,7 @@ const getTableColumns = () => {
 };
 
 const Rank = () => {
-  const [isPhone,setIsPhone]=false
+  const [isPhone,setIsPhone]=useState(false)
   useEffect(()=>{
     if(window.screen.width<1000){
       setIsPhone(true)
