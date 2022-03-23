@@ -12,7 +12,7 @@ const getTableColumns = (isPhone) => {
       title: "Rank",
       dataIndex: "rank",
       align,
-      fixed: 'left',
+      fixed:isPhone?'left':false,
       render: (text, record) => {
         return (
           <>
@@ -26,7 +26,7 @@ const getTableColumns = (isPhone) => {
       title: "Model",
       dataIndex: "model",
       align,
-      fixed: 'left',
+      fixed:isPhone?'left':false,
       width:isPhone?0:260,
       render:(text,record)=>{
         return <div>
@@ -36,112 +36,59 @@ const getTableColumns = (isPhone) => {
       }
     },
     {
-      title: "Cases&Bags",
-      dataIndex: "cases_bags",
+      title: "Category",
+      dataIndex: "Category",
       align,
-      children: [
-        {
-          title: "R1",
-          dataIndex: "cases_bags_R1",
-          key: "cases_bags_R1",
-          align,
-          render:(text,record)=>{
-            return <div>{record?.cases_bags?.scores['ROUGE-1']||EMPTY_TEXT}</div>
-          }
-        },
-        {
-          title: "R2",
-          dataIndex: "cases_bags_R2",
-          key: "cases_bags_R2",
-          align,
-          render:(text,record)=>{
-            return <div>{record?.cases_bags?.scores['ROUGE-2']||EMPTY_TEXT}</div>
-          }
-        },
-        {
-          title: "R3",
-          dataIndex: "cases_bags_R3",
-          key: "cases_bags_R3",
-          align,
-          render:(text,record)=>{
-            return <div>{record?.cases_bags?.scores['ROUGE-L']||EMPTY_TEXT}</div>
-          }
-        },
-      ],
+      width:160,
+      render:(text,record)=>{
+        return <div>
+          <div>Cases&Bags</div>
+          <div>Home Appliances</div>
+          <div>Cloothing</div>
+        </div>
+      }
     },
     {
-      title: "Home Appliances",
-      dataIndex: "home_appliances",
+      title: "ROUGE-1",
+      dataIndex: "ROUGE-1",
       align,
-      children:[
-        {
-          title: "R1",
-          dataIndex: "home_appliances_R1",
-          key: "home_appliances_R1",
-          align,
-          render:(text,record)=>{
-            return <div>{record?.home_appliances?.scores['ROUGE-1']||EMPTY_TEXT}</div>
-          }
-        },
-        {
-          title: "R2",
-          dataIndex: "home_appliances_R2",
-          key: "home_appliances_R2",
-          align,
-          render:(text,record)=>{
-            return <div>{record?.home_appliances?.scores['ROUGE-2']||EMPTY_TEXT}</div>
-          }
-        },
-        {
-          title: "R3",
-          dataIndex: "home_appliances_R3",
-          key: "home_appliances_R3",
-          align,
-          render:(text,record)=>{
-            return <div>{record?.home_appliances?.scores['ROUGE-L']||EMPTY_TEXT}</div>
-          }
-        },
-      ],
+      render:(text,record)=>{
+        return <div>
+          <div>{record?.cases_bags?.scores['ROUGE-1']||EMPTY_TEXT}</div>
+          <div>{record?.home_appliances?.scores['ROUGE-1']||EMPTY_TEXT}</div>
+          <div>{record?.clothing?.scores['ROUGE-1']||EMPTY_TEXT}</div>
+        </div>
+      }
     },
     {
-      title: "Cloothing",
-      dataIndex: "clothing",
+      title: "ROUGE-2",
+      dataIndex: "ROUGE-2",
       align,
-      children:[
-        {
-          title: "R1",
-          dataIndex: "clothing_R1",
-          key: "clothing_R1",
-          align,
-          render:(text,record)=>{
-            return <div>{record?.clothing?.scores['ROUGE-1']||EMPTY_TEXT}</div>
-          }
-        },
-        {
-          title: "R2",
-          dataIndex: "clothing_R2",
-          key: "clothing_R2",
-          align,
-          render:(text,record)=>{
-            return <div>{record?.clothing?.scores['ROUGE-2']||EMPTY_TEXT}</div>
-          }
-        },
-        {
-          title: "R3",
-          dataIndex: "clothing_R3",
-          key: "clothing_R3",
-          align,
-          render:(text,record)=>{
-            return <div>{record?.clothing?.scores['ROUGE-L']||EMPTY_TEXT}</div>
-          }
-        },
-      ],
+      render:(text,record)=>{
+        return <div>
+           <div>{record?.cases_bags?.scores['ROUGE-2']||EMPTY_TEXT}</div>
+          <div>{record?.home_appliances?.scores['ROUGE-2']||EMPTY_TEXT}</div>
+          <div>{record?.clothing?.scores['ROUGE-2']||EMPTY_TEXT}</div>
+        </div>
+      }
     },
+    {
+      title: "ROUGE-L",
+      dataIndex: "ROUGE-L",
+      align,
+      render:(text,record)=>{
+        return <div>
+           <div>{record?.cases_bags?.scores['ROUGE-L']||EMPTY_TEXT}</div>
+          <div>{record?.home_appliances?.scores['ROUGE-L']||EMPTY_TEXT}</div>
+          <div>{record?.clothing?.scores['ROUGE-L']||EMPTY_TEXT}</div>
+        </div>
+      }
+    },
+  
     {
       title: "AVG",
       dataIndex: "score_avg",
       align,
-      fixed: isPhone?false:"right",
       ...(RANK_IS_SORT
         ? {
             sorter: (a, b) => a.score_avg - b.score_avg,
@@ -163,7 +110,7 @@ const Rank = () => {
       <div className="title">{RANK_LABEL}</div>
       <div className="table">
         <Table
-         scroll={{ x:isPhone?1000: 1500 }}
+         scroll={{ x:isPhone?1000: 0 }}
           columns={getTableColumns(isPhone)}
           dataSource={tranferRankList(rankData)}
           pagination={false}
