@@ -3,7 +3,7 @@ export const PROJECT_TITLE_DESC = "JD Multimodal Product Summarization Challenge
 
 export const HEADER_BG_IMG =require('./images/header-bg.png'); // 顶部背景图
 
-export const RANK_LABEL = "Leaderboard"; // 排行榜 label
+export const RANK_LABEL = <b>Leaderboard</b>; // 排行榜 label
 
 export const RANK_IS_SORT = false; // 排行榜指标是否支持排序
 

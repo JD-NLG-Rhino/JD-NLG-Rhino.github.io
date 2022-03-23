@@ -1,5 +1,5 @@
 .desc-module{
-    margin-right: 10%;
+    margin-right: 80px;
     width:25%;
     min-height: 200px;
     background-color: #fff;
@@ -27,6 +27,7 @@
     >.desc{
         margin-left: 8px;
         margin-top: 12px;
+        word-break: break-all;
     }
     .url-list{
         display: flex;
