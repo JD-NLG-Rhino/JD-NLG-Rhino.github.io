@@ -1,12 +1,15 @@
 import { Table } from "antd";
 import { RANK_LABEL, RANK_IS_SORT } from "../../assests/config";
 import rankData from "../../assests/rank.json";
-import { tranferRankList,EMPTY_TEXT } from "./util";
+import { tranferRankList,align,phoneMarkColumns,pcMarkColumns} from "./util";
 import "./index.scss";
 import { useEffect,useState } from "react";
 
 const getTableColumns = (isPhone) => {
-  const align = "center";
+  let markColumns=phoneMarkColumns
+  if(!isPhone){
+    markColumns=pcMarkColumns
+  }
   return [
     {
       title: "Rank",
@@ -35,56 +38,7 @@ const getTableColumns = (isPhone) => {
         </div>
       }
     },
-    {
-      title: "Category",
-      dataIndex: "Category",
-      align,
-      width:160,
-      render:(text,record)=>{
-        return <div>
-          <div>Cases&Bags</div>
-          <div>Home Appliances</div>
-          <div>Cloothing</div>
-        </div>
-      }
-    },
-    {
-      title: "ROUGE-1",
-      dataIndex: "ROUGE-1",
-      align,
-      render:(text,record)=>{
-        return <div>
-          <div>{record?.cases_bags?.scores['ROUGE-1']||EMPTY_TEXT}</div>
-          <div>{record?.home_appliances?.scores['ROUGE-1']||EMPTY_TEXT}</div>
-          <div>{record?.clothing?.scores['ROUGE-1']||EMPTY_TEXT}</div>
-        </div>
-      }
-    },
-    {
-      title: "ROUGE-2",
-      dataIndex: "ROUGE-2",
-      align,
-      render:(text,record)=>{
-        return <div>
-           <div>{record?.cases_bags?.scores['ROUGE-2']||EMPTY_TEXT}</div>
-          <div>{record?.home_appliances?.scores['ROUGE-2']||EMPTY_TEXT}</div>
-          <div>{record?.clothing?.scores['ROUGE-2']||EMPTY_TEXT}</div>
-        </div>
-      }
-    },
-    {
-      title: "ROUGE-L",
-      dataIndex: "ROUGE-L",
-      align,
-      render:(text,record)=>{
-        return <div>
-           <div>{record?.cases_bags?.scores['ROUGE-L']||EMPTY_TEXT}</div>
-          <div>{record?.home_appliances?.scores['ROUGE-L']||EMPTY_TEXT}</div>
-          <div>{record?.clothing?.scores['ROUGE-L']||EMPTY_TEXT}</div>
-        </div>
-      }
-    },
-  
+    ...markColumns,
     {
       title: "AVG",
       dataIndex: "score_avg",
