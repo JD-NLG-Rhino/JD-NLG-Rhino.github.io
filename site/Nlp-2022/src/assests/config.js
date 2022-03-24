@@ -7,7 +7,7 @@ export const RANK_LABEL = <b>Leaderboard</b>; // 排行榜 label
 
 export const RANK_IS_SORT = false; // 排行榜指标是否支持排序
 
-export const phoneFixedCloums=false  // 手机端是否采用固定列滚动模式，和pc表格结构不同
+export const phoneFixedColumns=false  // 手机端是否采用固定列滚动模式，和pc表格结构不同
 
 /**
  * title 标题
