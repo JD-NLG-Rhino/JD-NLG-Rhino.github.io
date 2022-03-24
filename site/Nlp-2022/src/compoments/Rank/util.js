@@ -34,7 +34,7 @@ export const pcMarkColumns = [
     width: 160,
     render: (text, record) => {
       return (
-        <div>
+        <div style={{width:'160px'}}>
           <div>Cases&Bags</div>
           <div>Home Appliances</div>
           <div>Cloothing</div>
