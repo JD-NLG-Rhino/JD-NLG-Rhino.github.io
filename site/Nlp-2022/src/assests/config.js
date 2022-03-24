@@ -7,6 +7,8 @@ export const RANK_LABEL = <b>Leaderboard</b>; // 排行榜 label
 
 export const RANK_IS_SORT = false; // 排行榜指标是否支持排序
 
+export const phoneFixedCloums=false  // 手机端是否pc端表格列展示一致 
+
 /**
  * title 标题
  * desc 文本话术

@@ -1,9 +1,9 @@
 import { Table } from "antd";
-import { RANK_LABEL, RANK_IS_SORT } from "../../assests/config";
+import { RANK_LABEL, RANK_IS_SORT,phoneFixedCloums } from "../../assests/config";
 import rankData from "../../assests/rank.json";
 import { tranferRankList,align,phoneMarkColumns,pcMarkColumns} from "./util";
-import "./index.scss";
 import { useEffect,useState } from "react";
+import "./index.scss";
 
 const getTableColumns = (isPhone) => {
   let markColumns=phoneMarkColumns
@@ -55,7 +55,7 @@ const getTableColumns = (isPhone) => {
 const Rank = () => {
   const [isPhone,setIsPhone]=useState(false)
   useEffect(()=>{
-    if(window.screen.width<1000){
+    if(window.screen.width<1000&&phoneFixedCloums){
       setIsPhone(true)
     }
   },[])

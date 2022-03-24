@@ -19,7 +19,7 @@ export const tranferRankList = (rankData) => {
     return {
       ...item,
       rank: index + 1,
-      updateTime: new Date(created).toLocaleDateString(),
+      updateTime: new Date(created*1000).toLocaleDateString(),
     };
   });
 };
