@@ -61,7 +61,7 @@ export const DESC_LIST = [
   },
   {
     title: <b>References</b>,
-    desc: <a href="https://ojs.aaai.org/index.php/AAAI/article/view/6332">[1] Li et. al., Aspect-Aware Multimodal Summarization for Chinese E-Commerce Products. AAAI 2020.</a><a href="https://aclanthology.org/2020.coling-main.502">[2] Yuan et. al., On the Faithfulness for E-commerce Product Summarization. COLING 2020.</a><a href="https://aclanthology.org/2020.acl-main.125">[3] Xu et. al., Self-Attention Guided Copy Mechanism for Abstractive Summarization. ACL 2020.</a><a href="https://aclanthology.org/2021.findings-emnlp.1">[4] Xu et. al., K-PLUG: Knowledge-injected Pre-trained Language Model for Natural Language Understanding and Generation in E-Commerce. Findings of ACL: EMNLP 2021.</a>,
+    desc: "<a href='https://ojs.aaai.org/index.php/AAAI/article/view/6332'>[1] Li et. al., Aspect-Aware Multimodal Summarization for Chinese E-Commerce Products. AAAI 2020.</a><a href='https://aclanthology.org/2020.coling-main.502'>[2] Yuan et. al., On the Faithfulness for E-commerce Product Summarization. COLING 2020.</a><a href='https://aclanthology.org/2020.acl-main.125'>[3] Xu et. al., Self-Attention Guided Copy Mechanism for Abstractive Summarization. ACL 2020.</a><a href='https://aclanthology.org/2021.findings-emnlp.1'>[4] Xu et. al., K-PLUG: Knowledge-injected Pre-trained Language Model for Natural Language Understanding and Generation in E-Commerce. Findings of ACL: EMNLP 2021.</a>",
   },
   {
     title: <b>Have Questions?</b>,
