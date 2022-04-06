@@ -41,11 +41,11 @@ export const DESC_LIST = [
     downList: [
       {
         title: "K-PLUG",
-        url: "https://github.com/xu-song/k-plug",
+        url: "https://github.com/jd-aig/k-plug",
       },
       {
         title: "Multimodal K-PLUG",
-        url: "https://github.com/WaveLi123/m-kplug",
+        url: "https://github.com/jd-aig/m-kplug",
       },
     ],
   },
