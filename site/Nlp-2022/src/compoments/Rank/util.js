@@ -43,7 +43,7 @@ export const pcMarkColumns = [
     },
   },
   {
-    title: "ROUGE-1",
+    title: "RG-1",
     dataIndex: "ROUGE-1",
     align,
     render: (text, record) => {
@@ -57,7 +57,7 @@ export const pcMarkColumns = [
     },
   },
   {
-    title: "ROUGE-2",
+    title: "RG-2",
     dataIndex: "ROUGE-2",
     align,
     render: (text, record) => {
@@ -71,7 +71,7 @@ export const pcMarkColumns = [
     },
   },
   {
-    title: "ROUGE-L",
+    title: "RG-L",
     dataIndex: "ROUGE-L",
     align,
     render: (text, record) => {
