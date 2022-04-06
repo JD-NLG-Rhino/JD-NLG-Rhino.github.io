@@ -1,36 +1,36 @@
-.rank{
-width: 56%;
-min-height: 200px;
-background-color: #fff;
-border-radius: 12px;
-padding: 12px;
->.title{
+.rank {
+  width: 48%;
+  min-height: 200px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  > .title {
     font-size: 14px;
     padding-bottom: 4px;
     border-bottom: 2px solid #ddd;
     display: flex;
     align-items: center;
-    &::before{
-        background: #5580e9;
-    display: inline-block;
-    flex-shrink: 0;
-    height: 14px;
-    margin-right: 10px;
-    width: 4px;
-    content: '';
+    &::before {
+      background: #5580e9;
+      display: inline-block;
+      flex-shrink: 0;
+      height: 14px;
+      margin-right: 10px;
+      width: 4px;
+      content: "";
     }
-}
->.table{
+  }
+  > .table {
     margin-top: 12px;
-    .ant-table-content{
-        overflow-x: auto;
+    .ant-table-content {
+      overflow-x: auto;
     }
-    .update-time{
-        background-color: #777;
-        border-radius: 4px;
-        color: #fff;
-        font-size: 12px;
-        padding: 0px 4px;
+    .update-time {
+      background-color: #777;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 12px;
+      padding: 0px 4px;
     }
-}
+  }
 }

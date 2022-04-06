@@ -31,10 +31,10 @@ export const pcMarkColumns = [
     title: "Category",
     dataIndex: "Category",
     align,
-    width: 160,
+    width: 120,
     render: (text, record) => {
       return (
-        <div style={{width:'160px'}}>
+        <div style={{width:'120px'}}>
           <div>Cases&Bags</div>
           <div>Home Appliances</div>
           <div>Cloothing</div>

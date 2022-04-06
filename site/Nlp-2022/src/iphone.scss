@@ -1,11 +1,14 @@
 @media screen and (max-width: 1000px) {
     .header{
-        height: 145px;
-        >.title{
-            font-size: 24px;
-        }
-        >.desc{
-            font-size: 14px;
+        >.text{
+            >.title{
+                font-size: 24px;
+            margin-bottom: 0px;
+
+            }
+            >.desc{
+                font-size: 14px;
+            }
         }
     }
     .content{
