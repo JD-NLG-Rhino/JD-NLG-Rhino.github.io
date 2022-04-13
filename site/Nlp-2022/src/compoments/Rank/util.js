@@ -37,7 +37,7 @@ export const pcMarkColumns = [
         <div style={{width:'120px'}}>
           <div>Cases&Bags</div>
           <div>HomeAppliances</div>
-          <div>Cloothing</div>
+          <div>Clothing</div>
         </div>
       );
     },
@@ -173,7 +173,7 @@ export const phoneMarkColumns = [
     ],
   },
   {
-    title: "Cloothing",
+    title: "Clothing",
     dataIndex: "clothing",
     align,
     children: [
