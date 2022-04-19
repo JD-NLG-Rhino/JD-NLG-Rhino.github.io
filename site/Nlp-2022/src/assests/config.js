@@ -27,7 +27,7 @@ export const DESC_LIST = [
   },
   {
     title: <b>Getting the Data</b>,
-    desc: "<p> If you are interested in our challenge, please fill out the application form and email lihaoran24 (AT) jd.com (Please note that you participate in the challenge). The dataset will be sent to you.</p>",
+    desc: "<p> If you are interested in our challenge, please fill out the application form and email lihaoran24 (AT) jd.com (Please email us with your organization's email and note that you participate in the challenge). The dataset will be sent to you.</p>",
     downList: [
       {
         title: "Data Application Form",
