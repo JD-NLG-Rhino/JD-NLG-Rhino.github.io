@@ -72,7 +72,7 @@
   "leaderboard":[
     {
       "created": 1648090885,
-      "description": "K-PLUG(Textual)",
+      "description": "K-PLUG(Multimodal)",
       "organization": "Baseline",
       "cases_bags": {
         "scores": {
