@@ -55,7 +55,7 @@ export const DESC_LIST = [
     downList: [
       {
         title: "Submission Instructions",
-        url: "",
+        url: "https://worksheets.codalab.org/worksheets/0xa76ba3ebcb4647ed9867201c4174b266",
       },
     ],
   },
