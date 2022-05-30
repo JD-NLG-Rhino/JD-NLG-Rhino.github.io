@@ -64,12 +64,39 @@
       },
       {
         "key": "/out.json:ROUGE-AVG",
-        "name": "ROUGE-AVG"
+        "name": "ROUGE-AVG22.27"
       }
     ],
     "submission_tag": "jd-multimodal-product-summary-challenge"
   },
   "leaderboard":[
+    {
+      "created": 1653701341,
+      "description": "adakplug",
+      "organization": "xmu-nlp_lab",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 34.03,
+          "ROUGE-2": 11.46,
+          "ROUGE-L": 22.06
+        }
+      },
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 34.03,
+          "ROUGE-2": 12.79,
+          "ROUGE-L": 22.27
+        }
+      },
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 33.78,
+          "ROUGE-2": 11.83,
+          "ROUGE-L": 21.88
+        }
+      },
+      "score_avg": 22.68
+    },
     {
       "created": 1648090885,
       "description": "K-PLUG(Multimodal)",
