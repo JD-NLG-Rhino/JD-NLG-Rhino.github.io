@@ -98,6 +98,33 @@
       "score_avg": 22.68
     },
     {
+      "created": 1654596985,
+      "description": "Arrival",
+      "organization": "Huawei",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 33.89,
+          "ROUGE-2": 11.83,
+          "ROUGE-L": 21.65
+        }
+      },
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 34.26,
+          "ROUGE-2": 13.19,
+          "ROUGE-L": 22.09
+        }
+      },
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 33.55,
+          "ROUGE-2": 12.71,
+          "ROUGE-L": 20.56
+        }
+      },
+      "score_avg": 22.64
+    },
+    {
       "created": 1648090885,
       "description": "K-PLUG(Multimodal)",
       "organization": "Baseline",
