@@ -125,6 +125,33 @@
       "score_avg": 22.64
     },
     {
+      "created": 1654501888,
+      "description": "Pegasus",
+      "organization": "cpic",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 33.91,
+          "ROUGE-2": 10.83,
+          "ROUGE-L": 21.62
+        }
+      },
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 33.83,
+          "ROUGE-2": 12.08,
+          "ROUGE-L": 21.48
+        }
+      },
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 34.73,
+          "ROUGE-2": 11.87,
+          "ROUGE-L": 21.89
+        }
+      },
+      "score_avg": 22.47
+    },
+    {
       "created": 1648090885,
       "description": "K-PLUG(Multimodal)",
       "organization": "Baseline",
