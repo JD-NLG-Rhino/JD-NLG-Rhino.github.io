@@ -90,12 +90,12 @@
       },
       "clothing": {
         "scores": {
-          "ROUGE-1": 33.53,
-          "ROUGE-2": 11.77,
-          "ROUGE-L": 21.85
+          "ROUGE-1": 33.58,
+          "ROUGE-2": 11.95,
+          "ROUGE-L": 21.95
         }
       },
-      "score_avg": 22.92
+      "score_avg": 22.95
     },
     {
       "created": 1653701341,
