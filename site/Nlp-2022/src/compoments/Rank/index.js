@@ -70,6 +70,9 @@ const Rank = () => {
           pagination={false}
         />
       </div>
+      <div className="desc">
+      (* submitting prediction results rather than model)
+      </div>
     </div>
   );
 };
