@@ -84,8 +84,8 @@
       "home_appliances": {
         "scores": {
           "ROUGE-1": 34.37,
-          "ROUGE-2": 13.3,
-          "ROUGE-L": 22.8
+          "ROUGE-2": 13.30,
+          "ROUGE-L": 22.80
         }
       },
       "clothing": {
@@ -127,7 +127,7 @@
     {
       "created": 1654596985,
       "description": "Arrival",
-      "organization": "Huawei",
+      "organization": "Huawei*",
       "cases_bags": {
         "scores": {
           "ROUGE-1": 33.89,
@@ -213,7 +213,7 @@
         "scores": {
           "ROUGE-1": 31.08,
           "ROUGE-2": 9.78,
-          "ROUGE-L": 21.1
+          "ROUGE-L": 21.10
         }
       },
       "home_appliances": {
