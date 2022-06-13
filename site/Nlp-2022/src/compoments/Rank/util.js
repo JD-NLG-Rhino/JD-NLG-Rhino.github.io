@@ -10,6 +10,9 @@
 
 export const EMPTY_TEXT = "-";
 
+// 数据指标保留2位小数
+export const FIX_NUMBER = 2
+
 export const tranferRankList = (rankData) => {
   const { leaderboard = [] } = rankData;
   const rankList = leaderboard;
@@ -19,7 +22,7 @@ export const tranferRankList = (rankData) => {
     return {
       ...item,
       rank: index + 1,
-      updateTime: new Date(created*1000).toLocaleDateString(),
+      updateTime: new Date(created * 1000).toLocaleDateString(),
     };
   });
 };
@@ -34,7 +37,7 @@ export const pcMarkColumns = [
     width: 120,
     render: (text, record) => {
       return (
-        <div style={{width:'120px'}}>
+        <div style={{ width: '120px' }}>
           <div>Cases&Bags</div>
           <div>HomeAppliances</div>
           <div>Clothing</div>
@@ -49,9 +52,9 @@ export const pcMarkColumns = [
     render: (text, record) => {
       return (
         <div>
-          <div>{record?.cases_bags?.scores["ROUGE-1"] || EMPTY_TEXT}</div>
-          <div>{record?.home_appliances?.scores["ROUGE-1"] || EMPTY_TEXT}</div>
-          <div>{record?.clothing?.scores["ROUGE-1"] || EMPTY_TEXT}</div>
+          <div>{record?.cases_bags?.scores["ROUGE-1"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
+          <div>{record?.home_appliances?.scores["ROUGE-1"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
+          <div>{record?.clothing?.scores["ROUGE-1"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
         </div>
       );
     },
@@ -63,9 +66,9 @@ export const pcMarkColumns = [
     render: (text, record) => {
       return (
         <div>
-          <div>{record?.cases_bags?.scores["ROUGE-2"] || EMPTY_TEXT}</div>
-          <div>{record?.home_appliances?.scores["ROUGE-2"] || EMPTY_TEXT}</div>
-          <div>{record?.clothing?.scores["ROUGE-2"] || EMPTY_TEXT}</div>
+          <div>{record?.cases_bags?.scores["ROUGE-2"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
+          <div>{record?.home_appliances?.scores["ROUGE-2"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
+          <div>{record?.clothing?.scores["ROUGE-2"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
         </div>
       );
     },
@@ -77,9 +80,9 @@ export const pcMarkColumns = [
     render: (text, record) => {
       return (
         <div>
-          <div>{record?.cases_bags?.scores["ROUGE-L"] || EMPTY_TEXT}</div>
-          <div>{record?.home_appliances?.scores["ROUGE-L"] || EMPTY_TEXT}</div>
-          <div>{record?.clothing?.scores["ROUGE-L"] || EMPTY_TEXT}</div>
+          <div>{record?.cases_bags?.scores["ROUGE-L"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
+          <div>{record?.home_appliances?.scores["ROUGE-L"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
+          <div>{record?.clothing?.scores["ROUGE-L"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
         </div>
       );
     },
@@ -98,7 +101,7 @@ export const phoneMarkColumns = [
         align,
         render: (text, record) => {
           return (
-            <div>{record?.cases_bags?.scores["ROUGE-1"] || EMPTY_TEXT}</div>
+            <div>{record?.cases_bags?.scores["ROUGE-1"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
           );
         },
       },
@@ -109,7 +112,7 @@ export const phoneMarkColumns = [
         align,
         render: (text, record) => {
           return (
-            <div>{record?.cases_bags?.scores["ROUGE-2"] || EMPTY_TEXT}</div>
+            <div>{record?.cases_bags?.scores["ROUGE-2"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
           );
         },
       },
@@ -120,7 +123,7 @@ export const phoneMarkColumns = [
         align,
         render: (text, record) => {
           return (
-            <div>{record?.cases_bags?.scores["ROUGE-L"] || EMPTY_TEXT}</div>
+            <div>{record?.cases_bags?.scores["ROUGE-L"].toFixed(FIX_NUMBER) || EMPTY_TEXT}</div>
           );
         },
       },
