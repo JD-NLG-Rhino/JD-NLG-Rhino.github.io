@@ -154,7 +154,7 @@
     {
       "created": 1654501888,
       "description": "Pegasus",
-      "organization": "cpic",
+      "organization": "CPIC",
       "cases_bags": {
         "scores": {
           "ROUGE-1": 33.91,
