@@ -71,6 +71,33 @@
   },
   "leaderboard":[
     {
+      "created": 1655100786,
+      "description": "VG_CPT",
+      "organization": "NEU_CSE*",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 34.22,
+          "ROUGE-2": 11.95,
+          "ROUGE-L": 22.45
+        }
+      },
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 34.37,
+          "ROUGE-2": 13.3,
+          "ROUGE-L": 22.8
+        }
+      },
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 33.53,
+          "ROUGE-2": 11.77,
+          "ROUGE-L": 21.85
+        }
+      },
+      "score_avg": 22.92
+    },
+    {
       "created": 1653701341,
       "description": "adakplug",
       "organization": "xmu-nlp_lab",
@@ -177,6 +204,33 @@
         }
       },
       "score_avg": 22.08
+    },
+    {
+      "created": 1655100786,
+      "description": "UniLM",
+      "organization": "Panda*",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 31.08,
+          "ROUGE-2": 9.78,
+          "ROUGE-L": 21.1
+        }
+      },
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 21.27,
+          "ROUGE-2": 6.73,
+          "ROUGE-L": 15.97
+        }
+      },
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 31.85,
+          "ROUGE-2": 10.31,
+          "ROUGE-L": 21.49
+        }
+      },
+      "score_avg": 18.84
     }
   ],
   "updated": 1648090885.3419323
