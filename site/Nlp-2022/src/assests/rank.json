@@ -72,6 +72,33 @@
   "leaderboard":[
     {
       "created": 1655100786,
+      "description": "Arrival",
+      "organization": "Huawei*",
+      "cases_bags": {
+        "scores": {
+          "ROUGE-1": 34.52,
+          "ROUGE-2": 12.61,
+          "ROUGE-L": 21.30
+        }
+      },
+      "home_appliances": {
+        "scores": {
+          "ROUGE-1": 34.83,
+          "ROUGE-2": 13.49,
+          "ROUGE-L": 22.45
+        }
+      },
+      "clothing": {
+        "scores": {
+          "ROUGE-1": 34.83,
+          "ROUGE-2": 13.45,
+          "ROUGE-L": 21.23
+        }
+      },
+      "score_avg": 23.19
+    },  
+    {
+      "created": 1655100786,
       "description": "VG_CPT",
       "organization": "NEU_CSE*",
       "cases_bags": {
@@ -123,33 +150,6 @@
         }
       },
       "score_avg": 22.68
-    },
-    {
-      "created": 1654596985,
-      "description": "Arrival",
-      "organization": "Huawei*",
-      "cases_bags": {
-        "scores": {
-          "ROUGE-1": 33.89,
-          "ROUGE-2": 11.83,
-          "ROUGE-L": 21.65
-        }
-      },
-      "home_appliances": {
-        "scores": {
-          "ROUGE-1": 34.26,
-          "ROUGE-2": 13.19,
-          "ROUGE-L": 22.09
-        }
-      },
-      "clothing": {
-        "scores": {
-          "ROUGE-1": 33.55,
-          "ROUGE-2": 12.71,
-          "ROUGE-L": 20.56
-        }
-      },
-      "score_avg": 22.64
     },
     {
       "created": 1654501888,
