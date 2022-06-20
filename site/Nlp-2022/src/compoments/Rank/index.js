@@ -1,21 +1,32 @@
 import { Table } from "antd";
-import { RANK_LABEL, RANK_IS_SORT,phoneFixedColumns } from "../../assests/config";
+import {
+  RANK_LABEL,
+  RANK_IS_SORT,
+  phoneFixedColumns,
+} from "../../assests/config";
 import rankData from "../../assests/rank.json";
-import { tranferRankList,align,phoneMarkColumns,pcMarkColumns} from "./util";
-import { useEffect,useState } from "react";
+import {
+  tranferRankList,
+  align,
+  phoneMarkColumns,
+  pcMarkColumns,
+  FIX_NUMBER,
+  EMPTY_TEXT,
+} from "./util";
+import { useEffect, useState } from "react";
 import "./index.scss";
 
 const getTableColumns = (isPhone) => {
-  let markColumns=phoneMarkColumns
-  if(!isPhone){
-    markColumns=pcMarkColumns
+  let markColumns = phoneMarkColumns;
+  if (!isPhone) {
+    markColumns = pcMarkColumns;
   }
   return [
     {
       title: "Rank",
       dataIndex: "rank",
       align,
-      fixed:isPhone?'left':false,
+      fixed: isPhone ? "left" : false,
       render: (text, record) => {
         return (
           <>
@@ -29,20 +40,25 @@ const getTableColumns = (isPhone) => {
       title: "Model",
       dataIndex: "model",
       align,
-      fixed:isPhone?'left':false,
-      width:isPhone?0:260,
-      render:(text,record)=>{
-        return <div>
-          <div>{record.description}</div>
-          <div>{record.organization}</div>
-        </div>
-      }
+      fixed: isPhone ? "left" : false,
+      width: isPhone ? 0 : 260,
+      render: (text, record) => {
+        return (
+          <div>
+            <div>{record.description}</div>
+            <div>{record.organization}</div>
+          </div>
+        );
+      },
     },
     ...markColumns,
     {
       title: "AVG",
       dataIndex: "score_avg",
       align,
+      render: (text) => {
+        return text ? text.toFixed(FIX_NUMBER) : EMPTY_TEXT;
+      },
       ...(RANK_IS_SORT
         ? {
             sorter: (a, b) => a.score_avg - b.score_avg,
@@ -53,25 +69,25 @@ const getTableColumns = (isPhone) => {
 };
 
 const Rank = () => {
-  const [isPhone,setIsPhone]=useState(false)
-  useEffect(()=>{
-    if(window.screen.width<1000&&phoneFixedColumns){
-      setIsPhone(true)
+  const [isPhone, setIsPhone] = useState(false);
+  useEffect(() => {
+    if (window.screen.width < 1000 && phoneFixedColumns) {
+      setIsPhone(true);
     }
-  },[])
+  }, []);
   return (
     <div className="rank">
       <div className="title">{RANK_LABEL}</div>
       <div className="table">
         <Table
-         scroll={{ x:isPhone?1000: 0 }}
+          scroll={{ x: isPhone ? 1000 : 0 }}
           columns={getTableColumns(isPhone)}
           dataSource={tranferRankList(rankData)}
           pagination={false}
         />
       </div>
       <div className="desc">
-      (* submitting prediction results rather than model)
+        (* submitting prediction results rather than model)
       </div>
     </div>
   );
