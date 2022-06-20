@@ -71,31 +71,31 @@
   },
   "leaderboard":[
     {
-      "created": 1655100786,
+      "created": 1655726821,
       "description": "Arrival",
       "organization": "Huawei*",
       "cases_bags": {
         "scores": {
-          "ROUGE-1": 34.52,
-          "ROUGE-2": 12.61,
-          "ROUGE-L": 21.30
+          "ROUGE-1": 34.91,
+          "ROUGE-2": 12.29,
+          "ROUGE-L": 22.43
         }
       },
       "home_appliances": {
         "scores": {
-          "ROUGE-1": 34.83,
-          "ROUGE-2": 13.49,
-          "ROUGE-L": 22.45
+          "ROUGE-1": 34.56,
+          "ROUGE-2": 13.20,
+          "ROUGE-L": 22.52
         }
       },
       "clothing": {
         "scores": {
-          "ROUGE-1": 34.83,
-          "ROUGE-2": 13.45,
-          "ROUGE-L": 21.23
+          "ROUGE-1": 35.34,
+          "ROUGE-2": 12.79,
+          "ROUGE-L": 22.57
         }
       },
-      "score_avg": 23.19
+      "score_avg": 23.40
     },  
     {
       "created": 1655100786,
