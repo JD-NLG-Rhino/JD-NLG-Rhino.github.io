@@ -31,7 +31,7 @@ export const DESC_LIST = [
     downList: [
       {
         title: "Data Application Form",
-        url: "https://nlp-object-store.s3.cn-north-1.jdcloud-oss.com/multimodal-product-summarization-challenge/Application_terms.docx",
+        url: "https://github.com/jd-aig/multimodal-product-summarization-challenge/files/8767681/Application_terms.docx",
       },
     ],
   },
